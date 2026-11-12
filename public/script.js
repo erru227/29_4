@@ -7,6 +7,7 @@ const component = <Greeting />;
 function Greeting() {
    return <h1>Hello!</h1>;
 }
+root.render(component);
 /*
 class Greeting extends React.Component {
    render() {
