@@ -3,8 +3,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
 let page = <>
-   <Greeting/>
-   <Content></Content>
+   <Greeting><Greeting/>
+   <Content><Content/>
 </>;
 
 root.render(page);
