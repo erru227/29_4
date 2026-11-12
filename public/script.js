@@ -1,15 +1,6 @@
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-
-
-let page = <>
-   <functionComponent/>
-   <ClassComponent/>
-</>;
-
-root.render(page);
-
-function functionComponent() {
+function FunctionComponent() {
    return <h1>Hello!</h1>;
 }
 
@@ -19,3 +10,9 @@ class ClassComponent extends React.Component {
    }
 }
 
+let page = <>
+   <FunctionComponent/>
+   <ClassComponent/>
+</>;
+
+root.render(page);
