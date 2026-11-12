@@ -2,16 +2,20 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
 
-const component = <Greeting />;
+let page = <>
+   <Greeting/>
+   <Content></Content>
+</>;
+
+root.render(page);
 
 function Greeting() {
    return <h1>Hello!</h1>;
 }
-root.render(component);
-/*
-class Greeting extends React.Component {
+
+class Content extends React.Component {
    render() {
-      return <h1>Hello!</h1>;
+      return <h2>This is the Second Part</h2>;
    }
 }
-*/
+
