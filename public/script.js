@@ -3,17 +3,16 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
 let page = <>
-   <Greeting><Greeting/>
-   <Content><Content/>
+   <classComponent/>
 </>;
 
 root.render(page);
 
-function Greeting() {
+function classComponent() {
    return <h1>Hello!</h1>;
 }
 
-class Content extends React.Component {
+class FunctionComponent extends React.Component {
    render() {
       return <h2>This is the Second Part</h2>;
    }
